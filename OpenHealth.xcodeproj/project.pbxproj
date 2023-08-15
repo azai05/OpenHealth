@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BD798A0E2A8BFD6000169632 /* LogIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD798A0D2A8BFD6000169632 /* LogIn.swift */; };
 		BDEAC3DD2A8BCD5300589C37 /* OpenHealthApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEAC3DC2A8BCD5300589C37 /* OpenHealthApp.swift */; };
 		BDEAC3DF2A8BCD5300589C37 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEAC3DE2A8BCD5300589C37 /* ContentView.swift */; };
 		BDEAC3E12A8BCD5400589C37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDEAC3E02A8BCD5400589C37 /* Assets.xcassets */; };
@@ -14,6 +15,9 @@
 		BDEAC3EE2A8BCD5400589C37 /* OpenHealthTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEAC3ED2A8BCD5400589C37 /* OpenHealthTests.swift */; };
 		BDEAC3F82A8BCD5400589C37 /* OpenHealthUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEAC3F72A8BCD5400589C37 /* OpenHealthUITests.swift */; };
 		BDEAC3FA2A8BCD5400589C37 /* OpenHealthUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEAC3F92A8BCD5400589C37 /* OpenHealthUITestsLaunchTests.swift */; };
+		BDEAC4092A8BCF9100589C37 /* VolunteerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEAC4082A8BCF9100589C37 /* VolunteerView.swift */; };
+		BDEAC40B2A8BCFA800589C37 /* PatientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEAC40A2A8BCFA800589C37 /* PatientView.swift */; };
+		BDEAC40D2A8BCFB700589C37 /* WhatToExpectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDEAC40C2A8BCFB700589C37 /* WhatToExpectView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BD798A0D2A8BFD6000169632 /* LogIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogIn.swift; sourceTree = "<group>"; };
 		BDEAC3D92A8BCD5300589C37 /* OpenHealth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenHealth.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEAC3DC2A8BCD5300589C37 /* OpenHealthApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenHealthApp.swift; sourceTree = "<group>"; };
 		BDEAC3DE2A8BCD5300589C37 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +49,10 @@
 		BDEAC3F32A8BCD5400589C37 /* OpenHealthUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenHealthUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDEAC3F72A8BCD5400589C37 /* OpenHealthUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenHealthUITests.swift; sourceTree = "<group>"; };
 		BDEAC3F92A8BCD5400589C37 /* OpenHealthUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenHealthUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BDEAC4082A8BCF9100589C37 /* VolunteerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VolunteerView.swift; sourceTree = "<group>"; };
+		BDEAC40A2A8BCFA800589C37 /* PatientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatientView.swift; sourceTree = "<group>"; };
+		BDEAC40C2A8BCFB700589C37 /* WhatToExpectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToExpectView.swift; sourceTree = "<group>"; };
+		BDEAC40E2A8BD27D00589C37 /* Poppins-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Poppins-Light.ttf"; path = "../../../Downloads/Poppins/Poppins-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +105,10 @@
 			children = (
 				BDEAC3DC2A8BCD5300589C37 /* OpenHealthApp.swift */,
 				BDEAC3DE2A8BCD5300589C37 /* ContentView.swift */,
+				BD798A0D2A8BFD6000169632 /* LogIn.swift */,
+				BDEAC40C2A8BCFB700589C37 /* WhatToExpectView.swift */,
+				BDEAC40A2A8BCFA800589C37 /* PatientView.swift */,
+				BDEAC4082A8BCF9100589C37 /* VolunteerView.swift */,
 				BDEAC3E02A8BCD5400589C37 /* Assets.xcassets */,
 				BDEAC3E22A8BCD5400589C37 /* Preview Content */,
 			);
@@ -123,6 +136,7 @@
 			children = (
 				BDEAC3F72A8BCD5400589C37 /* OpenHealthUITests.swift */,
 				BDEAC3F92A8BCD5400589C37 /* OpenHealthUITestsLaunchTests.swift */,
+				BDEAC40E2A8BD27D00589C37 /* Poppins-Light.ttf */,
 			);
 			path = OpenHealthUITests;
 			sourceTree = "<group>";
@@ -257,7 +271,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDEAC40B2A8BCFA800589C37 /* PatientView.swift in Sources */,
+				BD798A0E2A8BFD6000169632 /* LogIn.swift in Sources */,
 				BDEAC3DF2A8BCD5300589C37 /* ContentView.swift in Sources */,
+				BDEAC4092A8BCF9100589C37 /* VolunteerView.swift in Sources */,
+				BDEAC40D2A8BCFB700589C37 /* WhatToExpectView.swift in Sources */,
 				BDEAC3DD2A8BCD5300589C37 /* OpenHealthApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
