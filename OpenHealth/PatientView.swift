@@ -9,7 +9,8 @@ import SwiftUI
 
 struct PatientView: View {
     @State private var isOn = false
-    @State private var patientBob = Patient(dates1: ["2014-05-20", "2014-05-20"], name1: "Bob")
+    @State private var On = false
+    //@State private var patientBob = Patient(dates1: ["2014-05-20", "2014-05-20"], name1: "Bob")
     public var ptName = ""
     var body: some View {
         VStack {
@@ -28,40 +29,56 @@ struct PatientView: View {
             //Spacer()
             
             
-                .font(.largeTitle)
-                .fontWeight(.heavy)
-                .foregroundColor(Color(hue: 0.662, saturation: 0.806, brightness: 0.797))
-                .padding(.bottom)
-            
+            .font(.largeTitle)
+            .fontWeight(.heavy)
+            .foregroundColor(Color(hue: 0.662, saturation: 0.806, brightness: 0.797))
+            //.padding(.bottom)
             VStack {
-              
-                
-                Text("Our Mission")
+                Text("HIPAA received")
                     .font(.title)
-                    .frame(width: 400, height: 50)
-                    .fontWeight(.bold)
-                    .foregroundColor(Color.white)
+                    .foregroundColor(Color(hue: 0.616, saturation: 0.833, brightness: 0.634))
                 
-                Text("OpenHealth's volunteer network connects student volunteers to elderly patients to offer them assistance in understanding their care.")
+                VStack {
+                    
+                    Text("Our Mission")
+                        .font(.title)
+                        .frame(width: 400, height: 50)
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.white)
+                    
+                    Text("OpenHealth's volunteer network connects student volunteers to elderly patients to offer them assistance in understanding their care.")
+                    
+                    
+                        .frame(width: 375, height: 75)
+                        .padding([.leading, .bottom, .trailing])
+                    //.padding(.leading, .trailing, .bottom)
+                        .foregroundColor(Color.white)
+                }
+                .background(Color(hue: 0.662, saturation: 0.806, brightness: 0.797))
+                Spacer()
                 
+                Toggle(isOn: $isOn) {
+                    Text("Patient reviewed")
+                        .font(.title)
+                        .fontWeight(.semibold)
+                        .padding(.trailing)
+                    
+                }
+                .frame(height: nil)
+                .toggleStyle(iOSCheckboxToggleStyle())
                 
-                    .frame(width: 375, height: 75)
-                    .padding([.leading, .bottom, .trailing])
-                //.padding(.leading, .trailing, .bottom)
-                    .foregroundColor(Color.white)
+                Toggle(isOn: $On) {
+                    Text("Accompany Amelia to her doctor's appt at 3PM")
+                        .font(.title)
+                        .fontWeight(.semibold)
+                        .padding(.trailing)
+                    
+                }
+                .frame(height: nil)
+                .toggleStyle(iOSCheckboxToggleStyle())
+                Spacer()
             }
-            .background(Color(hue: 0.662, saturation: 0.806, brightness: 0.797))
-            //Spacer()
             
-            Toggle(isOn: $isOn) {
-                Text("Patient reviewed")
-                    .font(.title)
-                    .fontWeight(.semibold)
-            }
-            .frame(height: nil)
-                  .toggleStyle(iOSCheckboxToggleStyle())
-            
-                  Spacer()
         }
     }
 }
@@ -84,7 +101,7 @@ struct iOSCheckboxToggleStyle: ToggleStyle {
 
 
 
-class Patient {
+/* class Patient {
     var dates : Array<String>
     var name : String
     
@@ -97,10 +114,7 @@ class Patient {
         return "Welcome \(name) !!"
     }
 }
-
-
-
-
+*/
 
 
 struct PatientView_Previews: PreviewProvider {

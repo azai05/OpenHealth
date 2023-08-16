@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct VolunteerView: View {
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+           Text("Previous Appt on 7/16/23")
+        }
     }
 }
 
